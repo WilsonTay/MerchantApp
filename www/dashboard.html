@@ -1,0 +1,48 @@
+
+<div class="">
+<h4 class="header ">Dashboard</h4>
+
+    <div class="col s12 m8 l9">
+        <div class="trending-line-chart-wrapper">
+            <canvas id="trending-line-chart" height="140"></canvas>
+            <p class="truncate grey-text ultra-small center-align">Number of Orders Last 30 Days</p>
+        </div>
+
+        <ul class="collection z-depth-1">
+            <li class="collection-item avatar">
+                <i class="mdi-action-assignment-ind circle"></i>
+                <span class="title">Merchant Information</span>
+                <p> {{merchant.Name}} </p>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="mdi-action-shopping-cart circle blue"></i>
+                <span class="title">Deals Information</span>
+                <p> {{dealCount}} Active Deals   </p>
+                <a class="secondary-content" href="#/deals">View Deals</a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="mdi-action-assessment circle green"></i>
+                <span class="title">Orders Information</span>
+                <p> {{todayOrderCount}} Items Sold Today
+
+                <br>{{yesterdayOrderCount}} Items Sold Yesterday
+
+                </p>
+                <a class="secondary-content" href="#/orders">View Orders</a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="mdi-action-favorite circle pink"></i>
+                <span class="title">Redemption Information</span>
+                <p> {{todayRedemptionCount}} Coupons Redeemed Today
+                <br>{{yesterdayRedemptionCount}} Coupons Redeemed Yesterday
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<script>
+
+</script>

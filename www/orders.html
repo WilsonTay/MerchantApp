@@ -1,0 +1,50 @@
+<h4 class="header">My Orders</h4>
+<div class="">
+    <div class="col s12 m12 l9">
+
+        <ul class="collection z-depth-1" >
+            <li  ng-click="goToOrder(order.Id)"  class="collection-item avatar email-unread"  ng-repeat="order in orders">
+
+                <img ng-src="{{order.DealThumbnailUrl}}" alt="" class="circle">
+                <span class="email-title">{{order.DealOption}}</span><span class="grey-text ultra-small"> - ({{order.Quantity}})</span>
+                <p class="truncate ultra-small blue-grey-text">{{order.EmailAddress}}
+                    <br> RM {{order.SpecialPrice}}
+                </p>
+                <a href="#/order/{{order.Id}}"> </a>
+
+                <a class="secondary-content task-cat pink" href="#/deals">{{order.DatePlaced}}</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
+<!--
+
+<div layout="column" flex layout-fill>
+    My Orders
+    <md-content md-theme="altTheme">
+        <section>
+            <md-list>
+                <md-list-item class="md-2-line" ng-repeat="order in orders">
+                    <a href="#/order/{{order.Id}}">
+                    <img ng-src="{{order.DealThumbnailUrl}}" class="md-avatar" >
+                    <div class="md-list-item-text ">
+                        <h3>{{order.EmailAddress}}</h3>
+                        <p>
+                            {{order.DealOption}} - RM {{order.SpecialPrice}}
+                        </p>
+                    </div>
+                    </a>
+                </md-list-item>
+            </md-list>
+        </section>
+    </md-content>
+</div>
+
+<script>
+    $(document).ready(function(){
+        $('.collapsible').collapsible({
+            accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+</script>-->

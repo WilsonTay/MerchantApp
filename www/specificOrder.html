@@ -1,0 +1,40 @@
+<div class="row">
+<img width="100%" class="z-depth-2" src="{{order.DealThumbnailUrl}}">
+<div class="card light-blue">
+    <div class="card-content white-text">
+        <span class="card-title">Order Information</span>
+        <p>Id: {{order.Id}}</p>
+        <p>{{order.DealOption}}</p>
+
+        <span class="card-title">Delivers To</span>
+        <p ng-repeat="line in order.AddressLines"> {{line}}</p>
+    </div>
+</div>
+
+    <div class=" ">
+
+        <ul class="collection">
+            <li class="collection-item avatar">
+                <i class="mdi-action-list circle"></i>
+                <span class="title">Selected Attributes</span>
+                <p ng-repeat="attr in order.DealAttributes"> {{attr}}</p>
+
+            </li>
+            <li class="collection-item avatar">
+                <i class="mdi-action-info circle blue"></i>
+                <span class="title">More Information</span>
+                <p> Quantity: {{order.Quantity}}   </p>
+                <a class="secondary-content task-cat pink" href="#/deals">{{order.DatePlaced}}</a>
+            </li>
+            <li class="collection-item avatar">
+                <i class="mdi-action-favorite circle pink"></i>
+                <span class="title">Coupons Redeemed</span>
+                <p> {{redeemedCoupons}} / {{totalCoupons}}
+                </p>
+                <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+            </li>
+        </ul>
+
+    </div>
+
+</div>

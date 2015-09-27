@@ -1,0 +1,83 @@
+
+<!-- START HEADER -->
+<header id="header" class="page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+        <nav class="cyan">
+            <div class="nav-wrapper">
+
+            </div>
+        </nav>
+    </div>
+    <!-- end header nav-->
+</header>
+<!-- END HEADER -->
+
+<!-- START MAIN -->
+<div id="main">
+    <!-- START WRAPPER -->
+    <div class="wrapper">
+
+        <!-- START LEFT SIDEBAR NAV-->
+        <aside id="left-sidebar-nav">
+            <ul id="slide-out" class="side-nav fixed leftside-navigation">
+                <li class="user-details cyan darken-2">
+                    <div class="row">
+                        <div class="col col s4 m4 l4">
+                            <img src="images/dealswhat.png" alt="" class="circle responsive-img valign profile-image">
+                        </div>
+                        <div class="col col s8 m8 l8">
+                            <a class="btn-flat dropdown-button white-text profile-btn" href="#"
+                               data-activates="profile-dropdown">{{getMerchantInfo().Name}}<i
+                                    class=""></i></a>
+
+                            <p class="user-roal">DealsWhat </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="bold active"><a href="#/" class=""><i
+                        class="mdi-action-dashboard"></i> Dashboard</a>
+                </li>
+                <li class="bold"><a href="#/deals" class=""><i
+                        class="mdi-action-shopping-cart"></i> My Deals</a>
+                </li>
+                <li class="bold"><a href="#/orders" class=""><i
+                        class="mdi-action-assessment"></i> My Orders</a>
+                </li>
+                <li class="bold" ><a ng-click="logout()" class=""><i
+                        class="mdi-hardware-keyboard-tab"></i> Logout</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="slide-out"
+               class="sidebar-collapse btn-floating btn-medium hide-on-large-only cyan"><i
+                    class="mdi-navigation-menu"></i></a>
+        </aside>
+        <!-- END LEFT SIDEBAR NAV-->
+
+        <!-- START CONTENT -->
+        <section id="content">
+            <div class="container">
+                <div class="section" ui-view>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a ng-click="scanCoupon()" class="btn-floating btn-large red">
+        <i class="large mdi-image-photo-camera"></i>
+    </a>
+    <!--    <ul>
+            <li><a href="css-helpers.html" class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-communication-live-help"></i></a></li>
+            <li><a href="app-widget.html" class="btn-floating yellow darken-1" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-device-now-widgets"></i></a></li>
+            <li><a href="app-calendar.html" class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-insert-invitation"></i></a></li>
+            <li><a href="app-email.html" class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-communication-email"></i></a></li>
+        </ul>-->
+</div>
+
+<script>
+
+</script>

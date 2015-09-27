@@ -1,0 +1,20 @@
+
+<div class="row center-align">
+<div ng-show="redeemSuccess">
+    <h4><i class="mdi-navigation-check circle green white-text small"></i> Verified!</h4>
+    <p class="grey-text">The coupon has successfully been redeemed.</p>
+    <img class="z-depth-2" src="{{lastScannedOrderline.DealThumbnailUrl}}"/>
+
+        <p class="flow-text">{{lastScannedOrderline.DealOption}}</p>
+        <p class="light">{{lastScannedOrderline.SpecialPrice}}</p>
+</div>
+
+
+<div ng-hide="redeemSuccess">
+    <h4><i class="mdi-alert-error circle red white-text small"></i> Unverified!</h4>
+    <p class="grey-text">{{errorMessage}}</p>
+</div>
+
+<div class="row"><div ng-click="goToDashboard()" class="waves-effect waves-light btn z-depth-1"><i class="mdi-action-dashboard"></i> Go To Dashboard</div></div>
+    <div class="row">  <div ng-click="scanCoupon()" class="waves-effect waves-light btn z-depth-1"><i class="mdi-navigation-refresh"></i> Scan Again</div></div>
+</div>

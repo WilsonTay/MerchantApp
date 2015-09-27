@@ -1,0 +1,127 @@
+<h4 class="header"> My Deals</h4>
+<div class="row" >
+<div class="col s12 m12 l12" ng-repeat="deal in deals">
+    <div class="card z-depth-2" >
+        <div class="card-image">
+            <img src="{{deal.ThumbnailUrls[0]}}">
+
+
+        </div>
+
+        <div class="card-content">
+            <span class="grey-text text-darken-4 truncate">{{deal.ShortTitle}}</span>
+            <p class="blog-post-content truncate">{{deal.ShortDescription}}</p>
+            <p class="row">
+                <span class="left"><a class="deep-orange-text" href="">{{deal.SpecialPrice}}</a></span>
+                <span class="right task-cat pink ">{{deal.EndTime}}</span>
+            </p>
+        </div>
+        <div class="card-action">
+            <i class="mdi-action-add-shopping-cart tiny orange-text"></i><a href="{{deal.orderLink}}">View Orders</a>
+        </div>
+    </div>
+</div>
+</div>
+<!--
+<div class="row" ng-repeat="deal in deals">
+    <div class="md-padding ">
+        <div class="card">
+            <div class="card-image">
+                <img src="{{deal.ThumbnailUrls[0]}}">
+
+            </div>
+            <h3 class="md-title">{{deal.ShortTitle}}</h3>
+            <div class="card-content">
+                <p>{{deal.ShortDescription}}</p>
+            </div>
+            <div class="card-action">
+                <a href="{{deal.orderLink}}">View Orders</a>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<!--<div layout="column" flex layout-fill>
+    <md-content md-theme="altTheme">
+<section>
+    <md-subheader md-dynamic-height class="md-primary">Unread Messages</md-subheader>
+    <md-list layout-padding>
+        <md-list-item class="md-3-line" ng-repeat="deal in deals">
+            <img ng-src="{{deal.ThumbnailUrls[0]}}" class="md-avatar" >
+            <div class="md-list-item-text">
+                <h5 class="md-title docs-output">{{deal.ShortTitle}}</h5>
+                <p>
+                    {{deal.ShortDescription}}
+                </p>
+                <div layout="row"><div>{{deal.RegularPrice}} {{deal.SpecialPrice}}</div><div flex layout="row" layout-align="end center">{{deal.EndTime}}</div></div>
+            </div>
+        </md-list-item>
+    </md-list>
+</section>
+    </md-content>
+    </div>-->
+<!--
+<div layout="column" flex layout-fill>
+    <md-content  md-theme="altTheme">
+        <section>
+            <md-subheader class="md-primary">Unread Messages</md-subheader>
+            <md-list layout-padding>
+                <md-list-item class="md-3-line" ng-repeat="message in messages">
+                    <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+                    <div class="md-list-item-text">
+                        <h3>{{message.what}}</h3>
+                        <h4>{{message.who}}</h4>
+                        <p>
+                            {{message.notes}}
+                        </p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </section>
+        <section>
+            <md-subheader class="md-warn">Late Messages</md-subheader>
+            <md-list layout="column" layout-padding>
+                <md-list-item class="md-3-line" ng-repeat="message in messages">
+                    <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+                    <div class="md-list-item-text">
+                        <h3>{{message.what}}</h3>
+                        <h4>{{message.who}}</h4>
+                        <p>
+                            {{message.notes}}
+                        </p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </section>
+        <section>
+            <md-subheader>Read Messages</md-subheader>
+            <md-list layout="column" layout-padding>
+                <md-list-item class="md-3-line" ng-repeat="message in messages">
+                    <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+                    <div class="md-list-item-text">
+                        <h3>{{message.what}}</h3>
+                        <h4>{{message.who}}</h4>
+                        <p>
+                            {{message.notes}}
+                        </p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </section>
+        <section>
+            <md-subheader class="md-accent">Archived messages</md-subheader>
+            <md-list layout="column" layout-padding>
+                <md-list-item class="md-3-line" ng-repeat="message in messages">
+                    <img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+                    <div class="md-list-item-text">
+                        <h3>{{message.what}}</h3>
+                        <h4>{{message.who}}</h4>
+                        <p>
+                            {{message.notes}}
+                        </p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </section>
+    </md-content>
+</div>-->
